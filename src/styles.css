@@ -1,8 +1,9 @@
 :root {
   --heading-font: "Playfair Display", serif;
   --default-font: "Poppins", sans-serif;
-  --primary-color: #6c63ff;
+  --primary-color: rgb(108, 99, 255);
   --secondary-color: #f9f7fe;
+  --shadow: rgba(63, 57, 170, 0.35) 0px 5px 15px;
 }
 h1,
 h2,
@@ -11,7 +12,9 @@ h4,
 h5,
 h6 {
   font-family: var(--heading-font);
+  font-weight: 700;
 }
+
 .hero p {
   font-family: var(--default-font);
   font-size: 36px;
@@ -26,13 +29,15 @@ h6 {
 }
 h1 {
   font-size: 96px;
-  font-weight: 700;
 }
 h2 {
   font-family: var(--default-font);
   font-size: 24px;
   font-weight: 400;
   color: #272142;
+}
+h3 {
+  font-size: 64px;
 }
 .btn-hero {
   font-family: var(--default-font);
@@ -43,8 +48,40 @@ h2 {
   padding: 18px 30px;
   border-radius: 4px;
   text-decoration: none;
+  box-shadow: var(--shadow);
 }
 .btn-hero:hover {
   color: #212552;
   background-color: var(--primary-color);
+}
+.sub-header {
+  font-size: 18px;
+  color: #272142;
+  font-family: var(--default-font);
+}
+.project-description {
+  font-family: var(--default-font);
+  padding: 20px 60px;
+}
+.project-description p {
+  font-size: 16px;
+  line-height: 30px;
+  padding-top: 40px;
+}
+.btn-project {
+  border: 1px solid var(--primary-color);
+  font-size: 16px;
+  padding: 18px 30px;
+  box-shadow: var(--shadow);
+}
+.btn-project a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.btn-project:hover {
+  border: 1px solid var(--primary-color);
+  color: #212552;
+}
+.row {
+  margin: 80px 0px;
 }
