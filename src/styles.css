@@ -1,7 +1,7 @@
 :root {
   --heading-font: "Playfair Display", serif;
   --default-font: "Poppins", sans-serif;
-  --primary-color: rgb(108, 99, 255);
+  --primary-color: #6c63ff;
   --secondary-color: #f9f7fe;
   --shadow: rgba(63, 57, 170, 0.35) 0px 5px 15px;
 }
@@ -41,7 +41,7 @@ h2 {
 h3 {
   font-size: 64px;
 }
-.btn-hero {
+.btn-brending {
   font-family: var(--default-font);
   color: #ffffff;
   background: var(--primary-color);
@@ -52,7 +52,7 @@ h3 {
   text-decoration: none;
   box-shadow: var(--shadow);
 }
-.btn-hero:hover {
+.btn-brending:hover {
   color: #212552;
   background-color: var(--primary-color);
 }
@@ -60,6 +60,7 @@ h3 {
   font-size: 18px;
   color: #272142;
   font-family: var(--default-font);
+  padding: 80px;
 }
 .project-description {
   font-family: var(--default-font);
@@ -81,6 +82,34 @@ h3 {
 .btn-project:hover {
   color: var(--primary-color);
 }
+.bg-main {
+  background-color: #a8a3fd;
+}
+.work-enquiry-container {
+  margin: 150px 10px 80px 10px;
+}
+.work-enquiry-heading {
+  font-size: 48px;
+  font-weight: bold;
+  padding: 0 60px;
+}
+footer {
+  background-color: #d1cff0;
+  padding: 30px 0;
+}
+footer a {
+  color: var(--primary-color);
+}
+footer a:hover {
+  opacity: 0.7;
+}
+.mail-footer {
+  color: #000000;
+  font-family: var(--default-font);
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
 
 @media (max-width: 960px) {
   .hero {
@@ -96,10 +125,29 @@ h3 {
     font-size: 44px;
   }
   .project-description {
-    padding: 0;
+    padding: 20px 0;
     text-align: center;
   }
   .project-description p {
     padding-top: 20px;
+  }
+  .work-inquiry-container {
+    margin: 70px 0;
+  }
+  .work-inquiry-heading {
+    font-size: 28px;
+    text-align: center;
+  }
+  .btn-brending {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px 20px;
+  }
+  .btn-project {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+  .contact-link-btn {
+    text-align: center;
   }
 }
